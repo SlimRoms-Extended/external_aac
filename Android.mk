@@ -52,8 +52,10 @@ LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/libSBRdec/include \
         $(LOCAL_PATH)/libSBRenc/include
 
-
 LOCAL_CPPFLAGS += -std=c++98
+
+LOCAL_SHARED_LIBRARIES := \
+        liblog
 
 LOCAL_MODULE:= libFraunhoferAAC
 
